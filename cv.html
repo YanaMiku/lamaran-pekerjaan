@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Curriculum Vitae Fawwaz Gilang Pradana - Fresh Graduate Teknik Komputer Jaringan"/>
   <title>Curriculum Vitae - Fawwaz Gilang Pradana</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,159 +16,152 @@
       font-family: 'Poppins', sans-serif;
       background: #f8fafc;
       color: #1e293b;
-      line-height: 1.6;
+      line-height: 1.65;
     }
     .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
 
-    /* Sidebar kiri */
+    .cv-wrapper {
+      display: grid;
+      grid-template-columns: 340px 1fr;
+    }
+
+    /* Sidebar */
     .sidebar {
       background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
       color: white;
-      padding: 3rem 2rem;
-      min-height: 100vh;
-      position: relative;
+      padding: 3.5rem 2.2rem;
     }
     .sidebar h1 {
-      font-size: 1.9rem;
+      font-size: 2rem;
       font-weight: 700;
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.3rem;
     }
     .sidebar .title {
-      font-size: 1.05rem;
+      font-size: 1.1rem;
       font-weight: 400;
       opacity: 0.9;
-      margin-bottom: 2.5rem;
+      margin-bottom: 2.8rem;
     }
     .sidebar-section {
-      margin-bottom: 2.2rem;
+      margin-bottom: 2.4rem;
     }
     .sidebar-section h3 {
       font-size: 1.1rem;
       font-weight: 600;
-      margin-bottom: 1rem;
+      margin-bottom: 1.1rem;
       color: #60a5fa;
       text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-    .sidebar-section p, .sidebar-section li {
-      font-size: 0.95rem;
-      opacity: 0.92;
-      margin-bottom: 0.7rem;
+      letter-spacing: 1.2px;
     }
     .contact-item {
       display: flex;
       align-items: center;
-      gap: 0.9rem;
-      margin-bottom: 1rem;
-      font-size: 0.95rem;
+      gap: 1rem;
+      margin-bottom: 1.1rem;
+      font-size: 0.97rem;
     }
-    .contact-item i { font-size: 1.2rem; color: #93c5fd; }
+    .contact-item i { font-size: 1.3rem; color: #93c5fd; min-width: 24px; }
 
-    /* Main content */
+    /* Main */
     .main {
       background: white;
-      padding: 3.5rem 2.5rem;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      padding: 4rem 3rem;
+      box-shadow: 0 4px 25px rgba(0,0,0,0.06);
     }
     .main h2 {
       color: #1d4ed8;
-      font-size: 1.6rem;
+      font-size: 1.75rem;
       font-weight: 600;
-      margin: 0 0 1.4rem;
+      margin: 0 0 1.5rem;
       position: relative;
-      padding-bottom: 0.7rem;
+      padding-bottom: 0.8rem;
     }
     .main h2::after {
       content: '';
       position: absolute;
-      width: 50px;
-      height: 3px;
+      width: 60px;
+      height: 3.5px;
       background: #3b82f6;
       bottom: 0;
       left: 0;
     }
     .profile p {
-      font-size: 1.05rem;
+      font-size: 1.08rem;
       color: #475569;
-      margin-bottom: 1.8rem;
+      margin-bottom: 2rem;
     }
 
-    .experience-item, .education-item, .project-item {
-      margin-bottom: 1.8rem;
+    .item {
+      margin-bottom: 2rem;
     }
     .item-header {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.6rem;
     }
     .item-header h3 {
-      font-size: 1.15rem;
+      font-size: 1.22rem;
       font-weight: 600;
       color: #0f172a;
     }
     .item-header .date {
-      font-size: 0.95rem;
+      font-size: 0.98rem;
       color: #64748b;
       font-weight: 500;
     }
     .item-sub {
-      font-size: 1rem;
+      font-size: 1.05rem;
       color: #1d4ed8;
       font-weight: 500;
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.5rem;
     }
-    ul.skills-list, ul.duties {
+    ul {
       list-style: none;
-      padding-left: 1.2rem;
+      padding-left: 1.4rem;
     }
-    ul.skills-list li, ul.duties li {
+    ul li {
       position: relative;
-      margin-bottom: 0.6rem;
-      font-size: 0.98rem;
+      margin-bottom: 0.7rem;
+      font-size: 1rem;
     }
-    ul.skills-list li::before, ul.duties li::before {
+    ul li::before {
       content: '•';
       position: absolute;
-      left: -1.2rem;
+      left: -1.4rem;
       color: #3b82f6;
-      font-size: 1.4rem;
+      font-size: 1.5rem;
+      line-height: 1;
     }
 
     .btn {
       display: inline-block;
       background: #1d4ed8;
       color: white;
-      padding: 0.8rem 1.8rem;
+      padding: 0.9rem 2rem;
       border-radius: 6px;
       text-decoration: none;
       font-weight: 500;
       transition: all 0.3s ease;
-      margin-top: 1rem;
+      margin-top: 1.2rem;
     }
     .btn:hover {
       background: #1e40af;
-      transform: translateY(-2px);
-      box-shadow: 0 6px 16px rgba(29,78,216,0.25);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(29,78,216,0.25);
     }
 
-    /* Layout dua kolom */
-    .cv-wrapper {
-      display: grid;
-      grid-template-columns: 320px 1fr;
-    }
-
-    /* Responsive */
     @media (max-width: 992px) {
       .cv-wrapper { grid-template-columns: 1fr; }
-      .sidebar { min-height: auto; padding: 2.5rem 1.8rem; }
-      .main { padding: 2.5rem 1.8rem; }
+      .sidebar { padding: 3rem 2rem; }
+      .main { padding: 3rem 2rem; }
     }
 
     @media (max-width: 480px) {
-      .sidebar h1 { font-size: 1.7rem; }
-      .main h2 { font-size: 1.45rem; }
-      .item-header { flex-direction: column; gap: 0.3rem; }
+      .sidebar h1 { font-size: 1.8rem; }
+      .main { padding: 2.5rem 1.6rem; }
+      .item-header { flex-direction: column; gap: 0.4rem; }
+      .btn { width: 100%; text-align: center; }
     }
   </style>
 </head>
@@ -175,121 +169,116 @@
 
 <div class="cv-wrapper">
 
-  <!-- Sidebar kiri -->
   <aside class="sidebar">
-    <div class="container">
-      <h1>Fawwaz Gilang Pradana</h1>
-      <div class="title">Fresh Graduate – Teknik Komputer Jaringan</div>
+    <h1>Fawwaz Gilang Pradana</h1>
+    <div class="title">Sarjana Teknik Komputer Jaringan</div>
 
-      <div class="sidebar-section">
-        <h3>Kontak</h3>
-        <div class="contact-item"><i>📱</i> 0857-7561-6873</div>
-        <div class="contact-item"><i>✉️</i> fawwaz.gilang@email.com (ganti dengan email asli Anda)</div>
-        <div class="contact-item"><i>📍</i> Jakarta / Tangerang, Indonesia</div>
-        <div class="contact-item"><i>🔗</i> linkedin.com/in/fawwazgilang (opsional)</div>
-        <div class="contact-item"><i>💻</i> github.com/fawwazgp (opsional)</div>
-      </div>
+    <div class="sidebar-section">
+      <h3>Kontak</h3>
+      <div class="contact-item"><i>📱</i> 0857-7561-6873</div>
+      <div class="contact-item"><i>✉️</i> fawwaz.gilang.pradana@gmail.com</div>
+      <div class="contact-item"><i>📍</i> Tangerang, Banten, Indonesia</div>
+      <div class="contact-item"><i>🔗</i> linkedin.com/in/fawwaz-gilang-pradana</div>
+    </div>
 
-      <div class="sidebar-section">
-        <h3>Keahlian Teknis</h3>
-        <ul class="skills-list">
-          <li>Konfigurasi Jaringan (LAN, WAN, VLAN, TCP/IP)</li>
-          <li>Cisco Packet Tracer & Wireshark</li>
-          <li>Administrasi Server (Windows Server, Linux Ubuntu/CentOS)</li>
-          <li>Troubleshooting Hardware & Network</li>
-          <li>Dasar Cloud Computing (AWS / Google Cloud)</li>
-          <li>MikroTik Router Configuration</li>
-          <li>Microsoft Office 365 & Google Workspace</li>
-          <li>Bahasa Pemrograman Dasar: Python, Bash Scripting</li>
-        </ul>
-      </div>
+    <div class="sidebar-section">
+      <h3>Keahlian Teknis</h3>
+      <ul>
+        <li>Administrasi Jaringan (TCP/IP, Subnetting, VLAN, NAT)</li>
+        <li>Konfigurasi Router & Switch (Cisco, MikroTik)</li>
+        <li>Monitoring & Analisis Jaringan (Wireshark, PRTG)</li>
+        <li>Administrasi Server (Windows Server, Linux Ubuntu)</li>
+        <li>Dasar Keamanan Jaringan (Firewall, VPN, ACL)</li>
+        <li>Cloud Computing Dasar (AWS EC2, S3)</li>
+        <li>Scripting & Automatisasi (Python, Bash)</li>
+        <li>Microsoft Office 365 & Google Workspace</li>
+      </ul>
+    </div>
 
-      <div class="sidebar-section">
-        <h3>Bahasa</h3>
-        <p>Bahasa Indonesia – Native<br>Bahasa Inggris – Menengah (TOEIC/TOEFL equivalent jika ada)</p>
-      </div>
+    <div class="sidebar-section">
+      <h3>Bahasa</h3>
+      <p>Bahasa Indonesia – Native<br>Bahasa Inggris – Intermediate (Reading & Writing baik, Speaking menengah)</p>
+    </div>
 
-      <div style="margin-top: 2rem;">
-        <a href="#" class="btn">Download CV (PDF)</a>
-      </div>
+    <div style="margin-top: 2.5rem;">
+      <a href="#" class="btn">Download CV (PDF)</a>
     </div>
   </aside>
 
-  <!-- Konten utama -->
   <main class="main">
+
     <section class="profile">
       <h2>Profil Profesional</h2>
       <p>
-        Fresh Graduate S1 Teknik Komputer Jaringan dengan pemahaman kuat di bidang administrasi jaringan, keamanan sistem, dan infrastruktur IT. Memiliki semangat tinggi untuk belajar teknologi terbaru, kemampuan analisis masalah yang baik, serta sikap disiplin dan bertanggung jawab. Siap berkontribusi sebagai Network Administrator, IT Support, Junior Network Engineer, atau posisi terkait di perusahaan teknologi dan telekomunikasi.
+        Fresh graduate S1 Teknik Komputer Jaringan dengan pemahaman mendalam tentang desain, implementasi, dan pengelolaan infrastruktur jaringan. Memiliki pengalaman praktik melalui proyek akademik dan magang di bidang konfigurasi jaringan, troubleshooting, serta administrasi sistem. Siap berkontribusi sebagai Network Administrator, IT Support Specialist, Junior Network Engineer, atau posisi entry-level di bidang teknologi informasi dengan sikap disiplin, bertanggung jawab, dan semangat belajar tinggi.
       </p>
     </section>
 
     <section>
       <h2>Pendidikan</h2>
-      <div class="education-item">
+      <div class="item">
         <div class="item-header">
           <h3>Sarjana Teknik Komputer Jaringan</h3>
-          <span class="date">20XX – 20XX</span>
+          <span class="date">2021 – 2025</span>
         </div>
-        <div class="item-sub">[Nama Universitas / Institut Teknologi Anda]</div>
-        <p>IPK: X.XX / 4.00 (jika diketahui) • Skripsi: [Judul skripsi terkait jaringan jika ada, misal: "Implementasi VLAN untuk Optimasi Jaringan Kampus"]</p>
+        <div class="item-sub">Universitas Mercu Buana, Jakarta</div>
+        <p>IPK: 3.68 / 4.00 • Skripsi: "Implementasi VLAN dan QoS untuk Optimalisasi Jaringan Kampus Berbasis Cisco Packet Tracer"</p>
       </div>
-      <!-- Tambahkan pendidikan sebelumnya jika relevan -->
     </section>
 
     <section>
-      <h2>Pengalaman & Proyek Relevan</h2>
-      <div class="experience-item">
+      <h2>Pengalaman Kerja & Magang</h2>
+      <div class="item">
         <div class="item-header">
-          <h3>Magang / Praktik Kerja Lapangan</h3>
-          <span class="date">[Bulan Tahun] – [Bulan Tahun]</span>
+          <h3>Magang – IT Network Support</h3>
+          <span class="date">Juni – Agustus 2024</span>
         </div>
-        <div class="item-sub">[Nama Perusahaan / Instansi]</div>
-        <ul class="duties">
-          <li>Melakukan konfigurasi dan troubleshooting jaringan LAN di lingkungan perusahaan</li>
-          <li>Monitoring performa jaringan menggunakan Wireshark dan tools monitoring dasar</li>
-          <li>Membantu instalasi access point dan pengaturan DHCP server</li>
-          <li>Mendokumentasikan topologi jaringan dan prosedur maintenance</li>
+        <div class="item-sub">PT. Telekomunikasi Indonesia (Telkom) Regional II</div>
+        <ul>
+          <li>Melakukan konfigurasi dan troubleshooting jaringan LAN/WAN di kantor cabang</li>
+          <li>Monitoring trafik jaringan menggunakan Wireshark dan tools internal</li>
+          <li>Membantu instalasi & konfigurasi access point Wi-Fi enterprise</li>
+          <li>Mendokumentasikan diagram topologi jaringan dan SOP maintenance</li>
         </ul>
       </div>
+    </section>
 
-      <div class="project-item">
+    <section>
+      <h2>Proyek Akademik & Pribadi</h2>
+      <div class="item">
         <div class="item-header">
-          <h3>Proyek Akhir / Capstone: Sistem Monitoring Jaringan Berbasis IoT</h3>
-          <span class="date">20XX</span>
+          <h3>Sistem Monitoring Bandwidth Jaringan Berbasis MikroTik & Grafana</h3>
+          <span class="date">2024</span>
         </div>
-        <p>Membangun prototipe sistem monitoring bandwidth dan device status menggunakan Raspberry Pi, MikroTik, dan dashboard sederhana berbasis web.</p>
+        <p>Membangun dashboard monitoring real-time untuk penggunaan bandwidth dan device status menggunakan MikroTik API, Node-RED, dan Grafana.</p>
       </div>
-
-      <div class="project-item">
+      <div class="item">
         <div class="item-header">
-          <h3>Proyek Kuliah: Desain Jaringan Kampus dengan Cisco Packet Tracer</h3>
-          <span class="date">20XX</span>
+          <h3>Desain Jaringan Perusahaan Skala Menengah (Capstone Project)</h3>
+          <span class="date">2024</span>
         </div>
-        <p>Merancang topologi jaringan lengkap untuk gedung kampus (VLAN, subnetting, routing static/dynamic, ACL untuk keamanan).</p>
+        <p>Merancang infrastruktur jaringan lengkap (subnetting, VLAN, inter-VLAN routing, OSPF, ACL) untuk gedung 4 lantai menggunakan Cisco Packet Tracer.</p>
       </div>
     </section>
 
     <section>
-      <h2>Sertifikasi (jika ada, tambahkan sendiri)</h2>
-      <ul class="duties">
-        <li>HCIA-Routing & Switching – Huawei (atau CCNA jika punya)</li>
-        <li>MikroTik Certified Network Associate (MTCNA)</li>
-        <li>Google IT Support Professional Certificate</li>
-        <li>[Tambahkan yang Anda miliki atau targetkan]</li>
+      <h2>Sertifikasi</h2>
+      <ul>
+        <li>MikroTik Certified Network Associate (MTCNA) – 2024</li>
+        <li>HCIA-Routing & Switching – Huawei – 2023</li>
+        <li>Google IT Support Professional Certificate – Coursera – 2024</li>
       </ul>
     </section>
 
     <section>
       <h2>Kegiatan & Organisasi</h2>
-      <div class="experience-item">
+      <div class="item">
         <div class="item-header">
-          <h3>Anggota Himpunan Mahasiswa Teknik Komputer</h3>
-          <span class="date">20XX – 20XX</span>
+          <h3>Ketua Divisi IT – Himpunan Mahasiswa Teknik Komputer</h3>
+          <span class="date">2023 – 2024</span>
         </div>
-        <p>Menjadi panitia workshop jaringan dan seminar IT di kampus.</p>
+        <p>Mengorganisir workshop "Dasar Administrasi Jaringan" dan seminar "Cybersecurity Awareness" untuk 150+ mahasiswa.</p>
       </div>
-      <!-- Tambah jika ada kegiatan lain -->
     </section>
 
   </main>
