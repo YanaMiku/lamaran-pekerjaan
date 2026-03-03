@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lamaran Pekerjaan – Fawwaz Gilang Pradana</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      background-color: #f8f9fc;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header & Nav */
+    header {
+      background: linear-gradient(135deg, #0f1f47 0%, #1e3a8a 100%);
+      color: white;
+      padding: 2.5rem 0 2rem;
+      text-align: center;
+      position: relative;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(to right, transparent, #60a5fa, transparent);
+    }
+
+    .site-title {
+      font-size: 2.1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .site-subtitle {
+      font-size: 1.1rem;
+      font-weight: 300;
+      opacity: 0.9;
+    }
+
+    nav {
+      background: #ffffff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav .container {
+      display: flex;
+      justify-content: center;
+      padding: 1rem 20px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: #1e293b;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.25s ease;
+      padding: 0.4rem 0;
+      position: relative;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #1e40af;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #3b82f6;
+      transition: width 0.3s ease;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    /* Sections */
+    section {
+      padding: 5rem 0;
+    }
+
+    h2 {
+      color: #0f172a;
+      font-size: 1.85rem;
+      font-weight: 600;
+      margin-bottom: 1.8rem;
+      position: relative;
+      padding-bottom: 0.8rem;
+    }
+
+    h2::after {
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 3px;
+      background: #3b82f6;
+      bottom: 0;
+      left: 0;
+      border-radius: 2px;
+    }
+
+    .profile-text {
+      max-width: 780px;
+      margin: 0 auto;
+      font-size: 1.08rem;
+      color: #334155;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 1.5rem 2.5rem;
+      max-width: 720px;
+      margin: 2rem auto 0;
+    }
+
+    .info-label {
+      font-weight: 600;
+      color: #1e293b;
+    }
+
+    .info-value {
+      color: #475569;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #1e40af;
+      color: white;
+      padding: 0.9rem 2.2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 500;
+      margin-top: 2rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 14px rgba(30, 64, 175, 0.18);
+      border: 1px solid #1e40af;
+    }
+
+    .btn:hover {
+      background: #1e3a8a;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(30, 64, 175, 0.25);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: #1e40af;
+      border: 1.5px solid #3b82f6;
+      box-shadow: none;
+    }
+
+    .btn-outline:hover {
+      background: #eff6ff;
+      color: #1e40af;
+    }
+
+    /* Footer */
+    footer {
+      background: #0f172a;
+      color: #94a3b8;
+      text-align: center;
+      padding: 2.5rem 0 3rem;
+      font-size: 0.95rem;
+    }
+
+    footer a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #93c5fd;
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .site-title { font-size: 1.8rem; }
+      .site-subtitle { font-size: 1rem; }
+      
+      .nav-links {
+        gap: 1.5rem;
+        font-size: 0.95rem;
+      }
+
+      .info-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+      }
+
+      section {
+        padding: 3.5rem 0;
+      }
+
+      h2 {
+        font-size: 1.65rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 16px;
+      }
+      
+      .btn {
+        padding: 0.85rem 1.8rem;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="container">
+      <ul class="nav-links">
+        <li><a href="#profil" class="active">Profil</a></li>
+        <li><a href="#pendidikan">Pendidikan</a></li>
+        <li><a href="#tujuan">Tujuan Lamaran</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header>
+    <div class="container">
+      <h1 class="site-title">Fawwaz Gilang Pradana</h1>
+      <p class="site-subtitle">Lamaran Pekerjaan</p>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section id="profil">
+      <h2>Profil Singkat</h2>
+      <p class="profile-text">
+        Lulusan SMK jurusan Teknik Komputer dan Jaringan yang memiliki minat besar di bidang teknologi, jaringan komputer, dan sistem IT. Siap bekerja secara profesional, disiplin, dan bertanggung jawab.
+      </p>
+
+      <div style="text-align:center; margin-top:2.5rem;">
+        <a href="#" class="btn">Download CV (PDF)</a>
+      </div>
+    </section>
+
+    <section id="pendidikan" style="background:#ffffff; margin:0 -20px; padding:5rem 20px;">
+      <div class="container">
+        <h2>Pendidikan</h2>
+        
+        <div class="info-grid">
+          <div class="info-label">Nama Lengkap</div>
+          <div class="info-value">Fawwaz Gilang Pradana</div>
+
+          <div class="info-label">Pendidikan Terakhir</div>
+          <div class="info-value">SMK Negeri 2 Adiwerna</div>
+
+          <div class="info-label">Jurusan</div>
+          <div class="info-value">Teknik Komputer dan Jaringan (TKJ)</div>
+
+          <div class="info-label">Tahun Lulus</div>
+          <div class="info-value">—</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tujuan">
+      <h2>Tujuan Lamaran</h2>
+      
+      <div class="info-grid" style="max-width:780px;">
+        <div class="info-label">Ditujukan kepada</div>
+        <div class="info-value">HRD PT. Sanken Argadwija</div>
+
+        <div class="info-label">Alamat</div>
+        <div class="info-value">
+          Jl. Veteran No.51, RT.3/RW.4, Cukanggalih,<br>
+          Kec. Curug, Kabupaten Tangerang,<br>
+          Banten 15810
+        </div>
+
+        <div class="info-label">Kontak Perusahaan</div>
+        <div class="info-value">0812-1383-383</div>
+      </div>
+
+      <div style="text-align:center; margin-top:3.5rem;">
+        <a href="mailto:hrd@sankenargadwija.co.id?subject=Lamaran Pekerjaan - Fawwaz Gilang Pradana" class="btn btn-outline">Kirim Lamaran via Email</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Dibuat dengan niat baik • Maret 2026</p>
+      <p>Fawwaz Gilang Pradana • <a href="tel:+628123456789">Kontak pribadi</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
